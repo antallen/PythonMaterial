@@ -6,3 +6,4 @@
 
 
 ### 參考文獻
++ [Python教學](https://www.learncodewithmike.com/2019/11/python46.html)
