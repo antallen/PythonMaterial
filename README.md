@@ -5,7 +5,7 @@
 ## Chapter 1. 工具的安裝與熟悉 [內容](ch1/README.md)
 ### Python 簡介
 + Python 是什麼
-
++ Python 優點
 ### 平台選擇
 ### 開發工具
 ### 開始使用
