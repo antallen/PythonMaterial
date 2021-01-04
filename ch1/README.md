@@ -16,7 +16,12 @@
     - Matplotlib - Python 2D繪圖函式庫，主要運用於資料的視覺化。
 
 ### 平台選擇
+
 ### 開發工具
++ 使用 Visual Studio Code
+  + 安裝 VSCode
+  + 配置 Python 工具
+  + 開始第一個程式
 ### 開始使用
 
 #### 參考文獻
