@@ -48,6 +48,12 @@
       在檔案空白處，按下滑鼠右鍵，可以選擇單行執行
       or
       在 Explorer 中，針對檔案按下滑鼠右鍵，可以選擇「Run Python File in Terminal」
+      or 
+      使用滑鼠拖選想要執行的程式碼區塊，再按下<Shift>+<Enter>即可區域執行
+      or
+      使用 <Ctrl>+<Shift>+<P>，輸入 Python: Start REPL 可呼叫 Terminal 視窗執行
+      or
+      檔案空白處，按下滑鼠右鍵，選擇「Run Current File in Python Interactive Window」(可能需要安裝一些軟體)
       ```
 
 ### 開始使用
