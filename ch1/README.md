@@ -21,7 +21,31 @@
 + 使用 Visual Studio Code
   + 安裝 VSCode
   + 配置 Python 工具
+    + 使用 Extensions 安裝 Python
+      ```python
+      <Ctrl>+<Shift>+<X>
+      查詢方框中，輸入「Python」
+      選擇第一個項目，按下「Install」
+      ```
+    + 選擇 Python 解譯器
+      ```python
+      <Ctrl>+<Shift>+<P>
+      執行：Python: Select Interpreter
+      選擇需要的解譯器
+      ```
   + 開始第一個程式
+    + 開一個新的檔案
+    + 輸入下列程式碼
+      ```python
+      msg = "Hello World"
+      print(msg)
+      ```
+    + 存成 hello.py 
+    + 執行程式碼
+      ```python
+      右上方的綠色箭頭符號
+      ```
+
 ### 開始使用
 
 #### 參考文獻
