@@ -46,6 +46,8 @@
       右上方的綠色箭頭符號
       or
       在檔案空白處，按下滑鼠右鍵，可以選擇單行執行
+      or
+      在 Explorer 中，針對檔案按下滑鼠右鍵，可以選擇「Run Python File in Terminal」
       ```
 
 ### 開始使用
