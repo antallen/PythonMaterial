@@ -1,18 +1,18 @@
 # Python 學習教材
 
 ## 前言
+這裡將會放上教學 Python 這個程式語言的範例！
+想要看文章內容的，請點選每個章節所提供的連結！
+----- 
+## Chapter 0. 工具的安裝與熟悉
++ [文章連結](http://python.onlinedoc.tw/2021/02/python3.html)
++ [範例1](ch0/hello.py)
 
-## Chapter 1. 工具的安裝與熟悉 [內容](ch1/README.md)
-### Python 簡介
-+ Python 是什麼
-+ Python 優點
-### 平台選擇
-### 開發工具
-### 開始使用
+-----
 
+## chapter 1
+-----
 ## Chapter 2
-### Python 基礎語法
-
 
 ### 參考文獻
 + [Python教學](https://www.learncodewithmike.com/2019/11/python46.html)
