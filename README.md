@@ -15,6 +15,9 @@
 -----
 ## Chapter 2
 
+
+### 課後專案練習
++ [專案練習說明](exercise/README.md)
 ### 參考文獻
 + [Python教學](https://www.learncodewithmike.com/2019/11/python46.html)
 + [良葛格的網站](https://openhome.cc/Gossip/Python/)
