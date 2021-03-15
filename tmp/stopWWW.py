@@ -23,6 +23,7 @@ try:
         print("關閉網站成功")
     client.close()
     atexit.register(_join_lingering_threads)
+    input("按下Enter即可離開....")
 except Exception:
     print('Exception!!')
     raise

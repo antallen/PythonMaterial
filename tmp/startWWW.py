@@ -26,6 +26,7 @@ try:
         print("登入密碼：Aa1234567890")
     client.close()
     atexit.register(_join_lingering_threads)
+    input("按下Enter即可離開....")
 except Exception:
     print('Exception!!')
     raise
