@@ -21,7 +21,7 @@ try:
     result = stdout.readlines()
     if not result:
         print("開啟成功")
-        print("連線網址："+hostname+"index.php")
+        print("連線網址："+hostname+"/index.php")
         print("登入帳號：admin")
         print("登入密碼：Aa1234567890")
     client.close()
