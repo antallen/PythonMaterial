@@ -1,3 +1,6 @@
+# 引用 random 類別中的 randrange() 函數
+from random import randrange
+
 # 要求玩家要輸入遊戲人數
 players_num = eval(input("請輸入玩家人數："))
 
@@ -17,17 +20,30 @@ for i in range(players_num):
     moneys.append(20000) 
 
 # 輸出資料
-print(players_name)
-print(moneys)
+print(players_name[0])
+print(moneys[0])
+
+# 設定玩家順序值
+i = 0
 
 # 開始進行遊戲
-while True:
+while True:    
 ##### a.)
-##### b.)
+##### b.) 擲骰子
+    newstep = randrange(1,6)
+    print(players_name[i] + "擲骰子：" + str(newstep) + " 點")
+    print(players_name[i] + "前進中...")
 ##### c.)
 ##### e.)
+    # 輪至下一位玩家
+    if (i < players_num):
+        i = i + 1
+    else:
+        i = i - players_num
+
     players_num = players_num - 1 # 測試 while 迴圈用
     print(players_num)
+    
 ##### f.) 結束遊戲條件
     if (players_num <= 1):
         print("遊戲結束")
