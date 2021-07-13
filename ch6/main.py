@@ -18,6 +18,9 @@ import Chance
 # 引用 Stores 物件
 import Stores
 
+# 引用 playMap 物件
+import playMap
+
 # 常用函式、參數設定區域
 ## 遊戲方格總數
 areas = 24
@@ -47,18 +50,23 @@ if __name__ == "__main__":
         players[i].setName(input("請輸入玩家名稱:"))
         
     # 輸出資料
+    
     for i in range(players_num):
         print(players[i].getName())
         print(players[i].getPo())
         print(players[i].getMoney())
-
+        
     # 設定玩家順序值
+    
     i = 0
-
+    myMap = playMap.playMap()
+    players_po = ['0','0','0','0']
     # 開始進行遊戲
     while True:    
-    ##### a.)
+    ##### a.) 印出地圖
+        myMap.printMap(players_po)
     ##### b.) 擲骰子
+        input("按下 Enter 進行遊戲.....")
         newstep = randrange(1,6)
         print(players[i].getName() + "擲骰子：" + str(newstep) + " 點")
         print(players[i].getName() + "前進中...")
@@ -66,8 +74,7 @@ if __name__ == "__main__":
         players[i].setPo(newstep)
         
     ##### c.) 移動到骰子點數的框格
-        newpo = players[i].getPo()
-        
+        newpo = players[i].getPo() 
         #　I. 可能經過起點
         if newpo >= areas:
             newpo = playerPo(newpo)
@@ -75,7 +82,8 @@ if __name__ == "__main__":
                 print("玩家回到「開始」位置：", newpo)
             elif newpo < (areas/4):
                 print("玩家越過「開始」位置：", newpo)
-
+        players_po[i] = str(newpo)
+        myMap.printMap(players_po)
         print("玩家在新位置：",newpo)
         #  II. 可能落在邊角框格
         if (newpo  == 6):
@@ -98,7 +106,7 @@ if __name__ == "__main__":
             if store[2] == '-1':
                 print("該地產無人所有！")
             else:
-                print("該地產為：" + str(players[store[2]].getName()) + "所有")
+                print("該地產為：" + str(players[int(store[2])].getName()) + "所有")
            
     ##### e.)
         # 輪至下一位玩家
