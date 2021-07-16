@@ -39,7 +39,7 @@ if __name__ == "__main__":
     # 要求玩家要輸入遊戲人數
     players_num = eval(input("請輸入玩家人數："))
 
-    # 建立玩家物件
+    # 建立玩家串列清單
     players = []
 
     # 按照遊戲人數，使用 Player 類別
@@ -52,12 +52,12 @@ if __name__ == "__main__":
     # 輸出資料
     players_po = []
     for i in range(players_num):
-        print(players[i].getName())
-        print(players[i].getPo())
-        print(players[i].getMoney())
+        #print(players[i].getName())
+        #print(players[i].getPo())
+        #print(players[i].getMoney())
         players_po.append('0')
-    # 設定玩家順序值
     
+    # 設定玩家順序值
     i = 0
     myMap = playMap.playMap()
     
@@ -68,6 +68,7 @@ if __name__ == "__main__":
     ##### b.) 擲骰子
         input("按下 Enter 進行遊戲.....")
         newstep = randrange(1,6)
+        
         print(players[i].getName() + "擲骰子：" + str(newstep) + " 點")
         print(players[i].getName() + "前進中...")
         # 設定玩家新的位置
