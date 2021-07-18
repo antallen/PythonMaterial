@@ -1,5 +1,9 @@
-/images/*
+image/
+images/*
 password
-/tmp/*
-/exercise/*
+tmp/*
+tmp/
+exercise/*
 .gitignore
+.vscode/*
+.vscode/
