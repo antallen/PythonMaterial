@@ -1,0 +1,1 @@
+postgres://ybjaahdeudfayr:af10610a7587dc35cee149be019f1bbbea852a39d9ca5406e57643649a14c47e@ec2-52-202-152-4.compute-1.amazonaws.com:5432/dc4f2tvtph9ov8
