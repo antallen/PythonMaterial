@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}大學麵店菜單系統{% endblock %}
+
+{% block main %}
+
+<!-- 宣告巨集 -->
+{% macro show_row(data, tag) -%}
+{% for menu in data %}
+<div class="row">
+    {% if menu[3] == 'Action' %}
+        {% for item in menu %}         
+                <div class="col">
+                    <{{ tag }}>{{ item }}</{{ tag }}>
+                </div>
+        {% endfor %}
+    {% else %}
+        {% for item in menu %}         
+            <div class="col">
+                <{{ tag }}>{{ item }}</{{ tag }}>
+            </div>
+        {% endfor %}
+        <div class="col">
+            <button type="submit" value="{{ menu[1],menu[2] }}" name="deldata">刪除</button>
+        </div>
+    {% endif %}
+</div>
+{% endfor %}
+{%- endmacro %}
+<!-- 宣告結束 -->
+
+<div class="container my-5 py-5">
+    <div class="row">
+        <div class="rol">
+            <h1>菜單列表</h1>
+        </div>
+    </div>
+    <!-- 顯示菜單用 -->
+    {% set cols = (("菜單項次","菜單名稱","價錢/每碗","Action"),)%}
+
+    {{ show_row(cols, "h2") }}
+    <hr class="my-4">
+    <form action="/delmenu" method="post">
+        {{ show_row(menulist,"p") }}
+    </form>
+    <form action="/addmenu" method="get">
+        <input type="submit" value="新增菜單">
+    </form>
+</div>
+
+{% endblock %}
