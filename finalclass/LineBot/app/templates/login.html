@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}大學麵店系統管理區{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>後台管理</h1>
+            <form action="/logins" method="post">
+                <label for="loginname">登入帳號</label>
+                <input type="text" id="loginname" placeholder="請輸入帳號" name="loginname">
+                <br>
+                <br>
+                <label for="passwrod">登入密碼</label>
+                <input type="password" id="password" placeholder="請輸入密碼" name="password">
+                <br>
+                <input type="submit" value="送出">
+            </form>
+        </div>
+    </div>
+{% endblock %}

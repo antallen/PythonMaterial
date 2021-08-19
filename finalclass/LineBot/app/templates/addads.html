@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}大學麵店活動訊息系統{% endblock %}
+
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>新增活動訊息</h1>
+            <form action="/addads" method="post">
+                <label for="adstitle">訊息標題</label>
+                <input type="text" id="adstitle" placeholder="請輸入訊息標題" name="adstitle">
+                <br>
+                <br>
+                <label for="adscontent">訊息內容</label>
+                <input type="text" id="adscontent" placeholder="請輸入訊息內容" name="adscontent">
+                <br>
+                <br>
+                <label for="adspicname">圖片名稱</label>
+                <input type="text" id="adspicname" placeholder="請輸入圖片名稱" name="adspicname">
+                <br>
+                <input type="submit" value="送出">
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}

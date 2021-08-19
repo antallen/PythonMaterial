@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}My Web Site{% endblock %}
+{% block main %}
+    <div class="container my-5 py-5">
+        <div class="row">
+            <div class="rol">
+                <h1>{{ nodeslist }}訂購單</h1>
+                <form action="/orderMenu" method="post">
+                    <label for="nos">{{ nodeslist }}數量</label>
+                    <input type="text" id="nos" placeholder="請輸入數量" name="nos">
+                    <br>
+                    <label for="cusphone">手機號碼</label>
+                    <input type="text" id="cusphone" placeholder="請輸入手機號碼" name="cusphone">
+                    <br>
+                    <input type="hidden" name="nodes" value="{{ nodeslist }}">
+                    <input type="submit" value="送出">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}

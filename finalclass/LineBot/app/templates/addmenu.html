@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}大學麵店菜單系統{% endblock %}
+
+
+{% block main %}
+<div class="container my-5 py-5">
+    <div class="row">
+        <div class="rol">
+            <h1>新增菜單</h1>
+            <form action="/addmenu" method="post">
+                <label for="menuname">菜單名稱</label>
+                <input type="text" id="menuname" placeholder="請輸入菜單名稱" name="menuname">
+                <br>
+                <label for="menuprize">菜單價錢</label>
+                <input type="text" id="menuprize" placeholder="請輸入價格" name="menuprize">
+                <br>
+                <input type="submit" value="送出">
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}
